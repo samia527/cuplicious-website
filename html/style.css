@@ -1,0 +1,415 @@
+/* =========================
+   VARIABLES / COLORS
+========================= */
+:root {
+  --brown: #4B2E2B;        /* chocolate brown */
+  --cream: #FFF3E0;        /* cream background */
+  --vanilla: #F8D7A4;      /* vanilla soft */
+  --accent: #C97C5D;       /* caramel / highlight */
+  --cocoa: #3B1F1A;        /* dark cocoa */
+  --powder: #E6C8A0;       /* cocoa powder light */
+}
+
+
+/* =========================
+   RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+  background-color: var(--cream);
+  color: var(--cocoa);
+}
+
+
+
+
+nav a {
+  color: var(--cocoa);
+  text-decoration: none;
+  margin: 0 12px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+nav a:hover {
+  color: var(--accent)          /* text color on hover */
+  background-color rgba (255,255,255,0.1);  /* soft highlight */
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: var(--cocoa);
+}
+
+.logo-img {
+  width: 55px;       /* adjust size as needed */
+  height: 55px;
+  margin-right: 12px; /* space between logo and text */
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero {
+  text-align: center;
+  padding: 5rem 1rem;
+  background: var(--cream);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--cocoa);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.products h1 {
+  font-size: 2.5rem;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 80px;
+  text-align: center;
+  color: var(--cocoa);
+
+}
+
+
+.contact h1  {
+  font-size: 2.5rem;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 80px;
+  text-align: center;
+  color: var(--cocoa);
+
+}
+.contact p {
+  font-size: 1.2rem;
+  margin-right: 20px;
+  text-align: center;
+
+}
+
+.btn {
+  background: var(--cream);
+  color: var(--cocoa);
+  padding: 0.6rem 1.4rem;
+  border-radius: 6px;
+  text-decoration: #3B1F1A;
+  display: inline-block;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.btn:hover {
+  background: white;
+  transform: translateY(-3px);
+}
+
+.section-text {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.why {
+  background: var(--vanilla);
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.why h2 {
+  color: var(--cocoa);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.why-text {
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* =========================
+   GRID / FEATURES / PRODUCTS
+========================= */
+.grid {
+  display: grid;
+  gap: 1rem;
+  padding: 2rem 1rem;
+}
+
+.card {
+  background: var(--vanilla);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.product-card {
+  background-color:white;
+}
+
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card div {
+  padding: 1rem;
+}
+
+
+
+/* Keep text above the circle */
+.hero * ,
+.products *,
+.about *,
+.contact * {
+  position: relative;
+  z-index: 1;
+}
+
+.how {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.about {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+  color: #3A1F1F;
+}
+
+.about h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about h2 {
+  margin-top: 25px;
+  color: #3A1F1F;
+}
+
+.about p {
+  line-height: 1.6;
+}
+
+.about ul {
+  margin-top: 10px;
+}
+
+.about ul li {
+  margin: 5px 0;
+}
+
+.about-section .icon {
+  width: 30px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.how h2 {
+  color: var(--primary);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.hero {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #FFF2E0;
+}
+
+.hero h1 {
+  font-size: 40px;
+  color: #3A1F1F;
+  text-align: center;
+}
+
+.tagline {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #3A1F1F;
+}
+
+.desc {
+  max-width: 600px;
+  margin: 15px 0;
+  color: #3A1F1F;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 10px 25px;
+  background-color: #3A1F1F;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color:white;
+  color: #3A1F1F;
+}
+
+
+.best-seller-slide {
+  display: flex;            /* horizontal slide effect */
+  gap: 20px;                /* space between product cards */
+  justify-content: center;  /* center in page */
+  flex-wrap: wrap ;     /* wrap on smaller screens */
+  
+}
+
+.best-seller-slide .product-card {
+  text-align: center;
+  
+}
+
+.best-seller-slide .product-card img {
+  width: 220px;       /* image width */
+  height: auto;       /* keep natural aspect ratio */
+  object-fit: cover;  /* crop only if needed */
+  display: block;
+  margin: 0 auto;     /* center image inside card */
+  color: var(--vanilla);
+  
+}
+
+.best-seller-slide .product-card h3 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.best-seller {
+  padding: 0 20px;   /* space from left & right */
+  text-align: center;
+}
+
+.best-seller h2,
+.best-seller p {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;  /* keeps text nicely centered */
+}
+.best-seller-slide .product-card img {
+  width: 220px;
+  height: 280px;      /* FIXED HEIGHT */
+  object-fit: contain; /* shows whole cup without stretching */
+}
+
+/* Loader style */
+#loader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--cream); /* background while loading */
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Spinning circle */
+#loader::after {
+  content: "";
+  width: 60px;
+  height: 60px;
+  border: 6px solid var(--caramel);   /* spinner color */
+  border-top: 6px solid var(--chocolate); /* top color for spinning effect */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Spin animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+ 
+/* =========================
+   FORM STYLES
+========================= */
+form {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.testimonials {
+  background: var(--cream);
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.testimonials h2 {
+  color: var(--cocoa);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.testimonials p {
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}.footer {
+  background: var(--cocoa);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+}
+
+.footer h3 {
+  margin-bottom: 0.5rem;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (min-width: 768px) {
+  .hero h1 { font-size: 3rem; }
+  .grid { grid-template-columns: repeat(3, 1fr); }
+}

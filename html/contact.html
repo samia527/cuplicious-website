@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cuplicious | Contact</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+
+</head>
+
+
+<!-- NAVBAR WITH LOGO -->
+<nav>
+  <div class="logo">
+    <img src="logo.png.jpeg" alt="Cuplicious Logo" style="height:40px;">
+    <span>Cuplicious</span>
+  </div>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+  </div>
+</nav>
+
+<!-- CONTACT SECTION -->
+<section class="contact">
+  <div class="dots"></div>
+  <div class="wave"></div>
+  <h1>Contact Us</h1>
+  <p>Have questions about Cuplicious? Send us a message!</p>
+
+  <!-- FORM -->
+  <form id="contactForm">
+    <input type="text" id="name" placeholder="Your Name">
+    <input type="email" id="email" placeholder="Your Email">
+    <textarea id="message" placeholder="Your Message"></textarea>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+</section>
+
+<!-- FIXED JS FOR ALERTS -->
+<script>
+  // Get the form
+  const form = document.getElementById("contactForm");
+
+  // Add submit listener
+  form.addEventListener("submit", function(e) {
+    e.preventDefault(); // Stop actual submission
+
+    // Get field values
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    // Check if any field is empty
+    if (!name || !email || !message) {
+      alert("Please fill all fields");
+    } else {
+      alert("Thank you for contacting Cuplicious");
+
+      // Optional: Clear the form
+      form.reset();
+    }
+  });
+</script>
+
+</body>
+</html>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <h3>Cuplicious</h3>
+  <p>Taste the Change</p>
+  <p>Made with ❤️ for a plastic-free future.</p>
+</footer>
+
+</body>
+</html>>
